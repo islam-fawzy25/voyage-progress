@@ -1,0 +1,23 @@
+$lightBlue:#8fabd3;
+$darkBlue:#174683;
+
+@mixin smallCircle{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+@mixin  bigCircle{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+}
+@mixin flexColumn{
+    display: flex;
+flex-direction: column;
+}

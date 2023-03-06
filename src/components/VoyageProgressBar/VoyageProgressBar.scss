@@ -1,0 +1,65 @@
+@import "../../stylesheets/variables.scss";
+
+.progress-bar-container {
+    @include flexCenter;
+    height: 150px;
+}
+
+.progress-bar {
+    @include flexColumn;
+    justify-content: space-evenly;
+    width: 50px;
+
+    .pin-dot-container {
+        @include flexColumn;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 100%;
+        height: 70%;
+        img {
+            width: 100%;
+            height: 80%;
+        }
+    }
+}
+
+.dot-active {
+    @include flexCenter;
+    div {
+        background: $darkBlue;
+    }
+    .smallCircle {
+        @include smallCircle;
+    }
+    .bigCircle {
+        @include bigCircle;
+    }
+}
+
+.dot-not-active {
+    @include flexCenter;
+    div {
+        background: $lightBlue;
+    }
+    .smallCircle {
+        @include smallCircle;
+    }
+    .bigCircle {
+        @include bigCircle;
+    }
+}
+
+
+.pin-active {
+    visibility: visible;
+}
+
+.pin-not-active {
+    visibility: hidden;
+}
+
+.port-name-container {
+    div {
+        font-size: x-large;
+    }
+}
