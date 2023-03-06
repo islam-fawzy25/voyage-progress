@@ -46,7 +46,7 @@ export default function VoyageProgressBar({ portOfLoading, portOfDischarge, arri
                             <img src={pinIcon} alt="pin-icon" />
                         </div >
                         <div className={index <= pinPlaced ? "dot-active" : "dot-not-active"}>
-                            <div className={index === 0 || index === dotsArray.length - 1 ? "bigCircle" : "smallCircle"}></div>
+                            <div className={index === 0 || index === dotsArray.length - 1 ? "big-circle" : "small-circle"}></div>
                         </div>
                     </div>
                     <div className="port-name-container">
